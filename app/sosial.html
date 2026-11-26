@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kesejahteraan sosial Indonesia: IPM 75,02, kemiskinan 9,03%, umur harapan hidup 74,15 tahun (2024).">
+<title>Sosial — DataNusa</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+<script src="sosial.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Data<em>Nusa</em></a>
+    <span class="tagline">Statistik Indonesia — angka resmi, sumber jelas, tanpa embel-embel</span>
+  </div>
+</header>
+<nav class="main" aria-label="Navigasi utama">
+  <div class="wrap">
+    <a href="index.html">Beranda</a>
+    <a href="penduduk.html">Penduduk</a>
+    <a href="ekonomi.html">Ekonomi</a>
+    <a href="sosial.html">Sosial</a>
+    <a href="daerah.html">Daerah</a>
+    <a href="metodologi.html">Tentang &amp; Sumber</a>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h1>Kesejahteraan sosial</h1>
+    <p class="lede">Indeks Pembangunan Manusia 2024 mencapai 75,02 — naik dari 69,55 pada 2015. Kemiskinan turun ke 9,03% pada Maret 2024, terendah sepanjang sejarah pengukuran BPS.</p>
+
+    <section class="kpis" aria-label="Indikator sosial 2024">
+      <div class="kpi"><div class="label">Umur harapan hidup</div><div class="value">74,15 <small>thn</small></div><div class="period">2024 · Sumber: BPS</div></div>
+      <div class="kpi amber"><div class="label">Rata-rata lama sekolah</div><div class="value">8,85 <small>thn</small></div><div class="period">2024 · Sumber: BPS</div></div>
+      <div class="kpi"><div class="label">Harapan lama sekolah</div><div class="value">13,21 <small>thn</small></div><div class="period">2024 · Sumber: BPS</div></div>
+      <div class="kpi"><div class="label">Melek huruf</div><div class="value">96,53<small>%</small></div><div class="period">Susenas Maret 2023 · Sumber: BPS</div></div>
+      <div class="kpi"><div class="label">IPM 2024</div><div class="value">75,02</div><div class="period">Kategori tinggi · Sumber: BPS</div></div>
+      <div class="kpi amber"><div class="label">Kemiskinan</div><div class="value">9,03<small>%</small></div><div class="period">Maret 2024 · Sumber: BPS</div></div>
+    </section>
+
+    <section class="grid2">
+      <div class="panel">
+        <h2>Tren IPM 2015–2024</h2>
+        <div id="hdi-chart"></div>
+        <p class="chart-note">Indeks Pembangunan Manusia. 2022 memakai vintage terbaru BPS (73,77). Sumber: BPS.</p>
+      </div>
+      <div class="panel">
+        <h2>Tren kemiskinan 2015–2024</h2>
+        <div id="poverty-chart"></div>
+        <p class="chart-note">Persen penduduk miskin, Maret tiap tahun. Kenaikan 2020–2021 adalah dampak pandemi. Sumber: BPS.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>IPM provinsi terpilih, 2024</h2>
+      <div id="hdi-prov-chart"></div>
+      <p class="chart-note">Tertinggi: DKI Jakarta (84,15). Terendah: Papua Pegunungan (54,43). Selisih hampir 30 poin — kesenjangan pembangunan antar daerah masih lebar. Sumber: BPS.</p>
+    </section>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h3>DataNusa — Statistik Indonesia</h3>
+    <p>Situs independen yang menyajikan ulang data publik BPS dan Bank Dunia. Bukan situs resmi BPS. Semua angka disertai sumber dan tahun; lihat <a href="metodologi.html">Tentang &amp; Sumber</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

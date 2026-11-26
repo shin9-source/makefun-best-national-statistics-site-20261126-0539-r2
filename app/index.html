@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DataNusa — statistik nasional Indonesia: penduduk 281,6 juta, PDB, inflasi, pengangguran, kemiskinan, dan IPM, dari BPS.">
+<title>DataNusa — Statistik Indonesia</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Data<em>Nusa</em></a>
+    <span class="tagline">Statistik Indonesia — angka resmi, sumber jelas, tanpa embel-embel</span>
+  </div>
+</header>
+<nav class="main" aria-label="Navigasi utama">
+  <div class="wrap">
+    <a href="index.html">Beranda</a>
+    <a href="penduduk.html">Penduduk</a>
+    <a href="ekonomi.html">Ekonomi</a>
+    <a href="sosial.html">Sosial</a>
+    <a href="daerah.html">Daerah</a>
+    <a href="metodologi.html">Tentang &amp; Sumber</a>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h1>Indonesia dalam angka</h1>
+    <p class="lede">DataNusa menyajikan statistik nasional Indonesia — penduduk, ekonomi, dan kesejahteraan — dari publikasi resmi BPS dan Bank Dunia, lengkap dengan sumber dan tahun setiap angka.</p>
+
+    <section class="kpis" aria-label="Indikator utama">
+      <div class="kpi"><div class="label">Penduduk</div><div class="value">281,6 <small>jt</small></div><div class="period">Pertengahan 2024 · Sumber: BPS</div></div>
+      <div class="kpi amber"><div class="label">PDB nominal</div><div class="value">Rp22.139 <small>T</small></div><div class="period">2024 · Sumber: BPS</div></div>
+      <div class="kpi"><div class="label">Pertumbuhan ekonomi</div><div class="value">5,03<small>%</small></div><div class="period">2024 (y-on-y) · Sumber: BPS</div></div>
+      <div class="kpi"><div class="label">Inflasi</div><div class="value">1,57<small>%</small></div><div class="period">Desember 2024 (y-on-y) · Sumber: BPS</div></div>
+      <div class="kpi amber"><div class="label">Pengangguran (TPT)</div><div class="value">4,91<small>%</small></div><div class="period">Agustus 2024 · Sumber: BPS</div></div>
+      <div class="kpi"><div class="label">Kemiskinan</div><div class="value">9,03<small>%</small></div><div class="period">Maret 2024 — 24,85 jt jiwa · Sumber: BPS</div></div>
+    </section>
+
+    <section class="panel" aria-labelledby="hero-title">
+      <h2 id="hero-title">Pertumbuhan ekonomi 2015–2024</h2>
+      <div class="controls">
+        <button id="toggle-bar" type="button" aria-pressed="true">Batang</button>
+        <button id="toggle-line" type="button" aria-pressed="false">Garis</button>
+        <label for="year-from">Dari tahun:</label>
+        <select id="year-from">
+          <option value="2015" selected>2015</option>
+          <option value="2018">2018</option>
+          <option value="2020">2020</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+      <div id="hero-chart"></div>
+      <p class="chart-note" id="hero-note"></p>
+    </section>
+
+    <section class="grid2">
+      <div class="panel">
+        <h2>Tren penduduk 2010–2024</h2>
+        <div id="pop-chart"></div>
+        <p class="chart-note">Juta jiwa, pertengahan tahun. Sensus 2020: 270,20 juta jiwa. Sumber: BPS.</p>
+      </div>
+      <div class="panel">
+        <h2>Rilis terbaru</h2>
+        <ul class="releases" id="releases"></ul>
+        <p class="chart-note">Jadwal rilis resmi BPS, lihat halaman <a href="metodologi.html">Tentang &amp; Sumber</a>.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>10 provinsi terpadat, 2024</h2>
+      <div class="tablewrap">
+        <table class="data">
+          <thead><tr><th>#</th><th>Provinsi</th><th class="num">Penduduk (ribu jiwa)</th><th class="num">Pangsa nasional</th></tr></thead>
+          <tbody id="top10-body"></tbody>
+        </table>
+      </div>
+      <p class="src">Sumber: BPS, Proyeksi Penduduk Interim 2020–2023 (pertengahan 2024). Tabel lengkap 38 provinsi ada di halaman <a href="penduduk.html">Penduduk</a>.</p>
+    </section>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h3>DataNusa — Statistik Indonesia</h3>
+    <p>Situs independen yang menyajikan ulang data publik BPS dan Bank Dunia. Bukan situs resmi BPS. Semua angka disertai sumber dan tahun; lihat <a href="metodologi.html">Tentang &amp; Sumber</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Penduduk Indonesia 281,6 juta jiwa (2024): tren 2010–2024, struktur umur SUPAS 2025, dan tabel 38 provinsi.">
+<title>Penduduk — DataNusa</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+<script src="penduduk.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Data<em>Nusa</em></a>
+    <span class="tagline">Statistik Indonesia — angka resmi, sumber jelas, tanpa embel-embel</span>
+  </div>
+</header>
+<nav class="main" aria-label="Navigasi utama">
+  <div class="wrap">
+    <a href="index.html">Beranda</a>
+    <a href="penduduk.html">Penduduk</a>
+    <a href="ekonomi.html">Ekonomi</a>
+    <a href="sosial.html">Sosial</a>
+    <a href="daerah.html">Daerah</a>
+    <a href="metodologi.html">Tentang &amp; Sumber</a>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h1>Penduduk Indonesia</h1>
+    <p class="lede">281,6 juta jiwa pada pertengahan 2024 (BPS). Lebih dari separuh penduduk tinggal di Pulau Jawa, dan sebagian besar penduduk berada pada usia produktif.</p>
+
+    <div class="callout"><p><b>Kepadatan nasional 2024: 147 jiwa/km².</b> Tertinggi di DKI Jakarta (sekitar 16.100 jiwa/km²), terendah di Papua Selatan (5 jiwa/km²). Lebih dari separuh penduduk tinggal di perkotaan. Sumber: BPS.</p></div>
+
+    <section class="grid2">
+      <div class="panel">
+        <h2>Tren penduduk 2010–2024</h2>
+        <div id="pop-chart"></div>
+        <p class="chart-note">Juta jiwa. 2010 dan 2020 adalah tahun sensus (237,64 jt dan 270,20 jt). Sumber: BPS.</p>
+      </div>
+      <div class="panel">
+        <h2>Struktur umur, SUPAS 2025</h2>
+        <div id="age-chart"></div>
+        <p class="chart-note">0–14 tahun: 23,44% · 15–64 tahun: 68,94% · 65+ tahun: 7,62%. Sumber: BPS, Survei Penduduk Antar Sensus 2025.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>38 provinsi, 2024</h2>
+      <div class="controls">
+        <label for="prov-search">Cari provinsi:</label>
+        <input type="search" id="prov-search" placeholder="mis. Jawa Barat">
+        <span class="src" id="filter-count"></span>
+      </div>
+      <div class="tablewrap">
+        <table class="data" id="prov-table">
+          <thead><tr>
+            <th class="sortable" data-col="0" data-type="text">Provinsi</th>
+            <th class="sortable num" data-col="1" data-type="num">Penduduk (ribu jiwa)</th>
+            <th class="sortable num" data-col="2" data-type="num">Pangsa</th>
+            <th class="sortable num" data-col="3" data-type="num">Kepadatan (/km²)</th>
+            <th class="sortable num" data-col="4" data-type="num">IPM</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="src">Klik judul kolom untuk mengurutkan. Penduduk: BPS, Proyeksi Penduduk Interim (pertengahan 2024). IPM: BPS 2024. Kepadatan dihitung dari penduduk dan luas wilayah BPS.</p>
+    </section>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h3>DataNusa — Statistik Indonesia</h3>
+    <p>Situs independen yang menyajikan ulang data publik BPS dan Bank Dunia. Bukan situs resmi BPS. Semua angka disertai sumber dan tahun; lihat <a href="metodologi.html">Tentang &amp; Sumber</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

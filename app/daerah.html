@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Statistik 38 provinsi Indonesia 2024: penduduk, pangsa nasional, IPM, dan kepadatan — pilih provinsi untuk melihat datanya.">
+<title>Daerah — DataNusa</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+<script src="daerah.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Data<em>Nusa</em></a>
+    <span class="tagline">Statistik Indonesia — angka resmi, sumber jelas, tanpa embel-embel</span>
+  </div>
+</header>
+<nav class="main" aria-label="Navigasi utama">
+  <div class="wrap">
+    <a href="index.html">Beranda</a>
+    <a href="penduduk.html">Penduduk</a>
+    <a href="ekonomi.html">Ekonomi</a>
+    <a href="sosial.html">Sosial</a>
+    <a href="daerah.html">Daerah</a>
+    <a href="metodologi.html">Tentang &amp; Sumber</a>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h1>Statistik daerah</h1>
+    <p class="lede">Pilih satu provinsi untuk melihat penduduk, pangsa penduduk nasional, IPM, dan kepadatannya. Tabel di bawah memuat seluruh 38 provinsi dan bisa diurutkan.</p>
+
+    <section class="panel">
+      <h2 id="prov-name">Jawa Barat</h2>
+      <div class="controls">
+        <label for="prov-select">Pilih provinsi:</label>
+        <select id="prov-select"></select>
+      </div>
+      <div class="daerah-panel">
+        <div class="kpi"><div class="label">Penduduk</div><div class="value" id="prov-pop">—</div><div class="period">Ribu jiwa, pertengahan 2024</div></div>
+        <div class="kpi amber"><div class="label">Pangsa penduduk</div><div class="value" id="prov-share">—</div><div class="period">Dari total nasional</div></div>
+        <div class="kpi"><div class="label">IPM</div><div class="value" id="prov-ipm">—</div><div class="period">2024 · Sumber: BPS</div></div>
+        <div class="kpi"><div class="label">Kepadatan</div><div class="value" id="prov-density">—</div><div class="period">Jiwa per km²</div></div>
+      </div>
+      <p class="chart-note" id="prov-note"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Tabel 38 provinsi, 2024</h2>
+      <div class="tablewrap">
+        <table class="data" id="prov-table">
+          <thead><tr>
+            <th class="sortable" data-col="0" data-type="text">Provinsi</th>
+            <th class="sortable num" data-col="1" data-type="num">Penduduk (ribu jiwa)</th>
+            <th class="sortable num" data-col="2" data-type="num">Pangsa</th>
+            <th class="sortable num" data-col="3" data-type="num">Kepadatan (/km²)</th>
+            <th class="sortable num" data-col="4" data-type="num">IPM</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="src">Klik judul kolom untuk mengurutkan. Penduduk: BPS, Proyeksi Penduduk Interim (pertengahan 2024). IPM: BPS 2024. Kepadatan dihitung dari penduduk dan luas wilayah BPS.</p>
+    </section>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h3>DataNusa — Statistik Indonesia</h3>
+    <p>Situs independen yang menyajikan ulang data publik BPS dan Bank Dunia. Bukan situs resmi BPS. Semua angka disertai sumber dan tahun; lihat <a href="metodologi.html">Tentang &amp; Sumber</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
